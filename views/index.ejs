@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>HowGreenMap</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=a7puakxfef"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8f711ac692b1f07e042187ba00b6c8c1&libraries=services"></script>
+</head>
+<body>
+    <ul id="navbar">
+        <li>
+            <a href="/">HowGreen</a>
+        </li>
+        <img src="/images/Artboard 8.png" width=15% />
+        <li style= "float:right;">
+            <a class="active" href="/upload">List</a>
+        </li>
+    <div id = "search">
+        <input id="search_input" placeholder="목적지를 입력해주세요!" />
+        <button id="search_button">검색</button>
+        <hr>
+        <div id="placesList"></div>
+    </div>
+    <div id="current">현재 위치</div>
+    <div id="map" style="width:100%;height:100vh;"></div>
+
+<script type="text/javascript" src="/javascripts/MarkerClustering.js"></script>
+<script type="text/javascript" src ="/javascripts/main.js"></script>
+</body>
+</html>
